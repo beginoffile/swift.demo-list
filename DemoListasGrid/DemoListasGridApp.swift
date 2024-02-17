@@ -11,7 +11,8 @@ import SwiftUI
 struct DemoListasGridApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            //ContentView()
+            GridList()
         }
     }
 }
