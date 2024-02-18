@@ -13,11 +13,13 @@ struct GridList: View {
         GridItem(.flexible())
     ]
     ]*/
-    let gridItem: [GridItem] = Array(repeating: .init(.flexible(maximum:80)), count: 2)
+    /*let gridItem: [GridItem] = Array(repeating: .init(.flexible(maximum:80)), count: 2)
+     */
+    @ObservedObject var grid = ModeloColumnas()
     var body: some View {
         NavigationView{
             ScrollView(){
-                LazyVGrid(columns: gridItem, spacing: 30, content: {
+                LazyVGrid(columns: grid.gridItem, spacing: 30, content: {
                     ForEach(lista){item in
                         Text(item.emoji).font(.system(size: 80))
                     }
@@ -30,15 +32,19 @@ struct GridList: View {
                             Section{
                                 Button("1 columna"){
                                     print("opcion1")
+                                    grid.columnas(num: 1)
                                 }
                                 Button("2 columna"){
-                                    print("opcion2")
+                                    grid.columnas(num: 2)
                                 }
                                 Button("3 columna"){
-                                    print("opcion3")
+                                    grid.columnas(num: 3)
                                 }
                                 Button("4 columna"){
-                                    print("opcion4")
+                                    grid.columnas(num: 4)
+                                }
+                                Button("Reset columns"){
+                                    UserDefaults.standard.removeObject(forKey: "numero")
                                 }
                             }
                         }

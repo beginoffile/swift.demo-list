@@ -13,6 +13,7 @@
 		05AC7CA72B80496200A91A69 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05AC7CA62B80496200A91A69 /* Preview Assets.xcassets */; };
 		05AC7CAE2B8132A000A91A69 /* Modelo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC7CAD2B8132A000A91A69 /* Modelo.swift */; };
 		05AC7CB02B8140A400A91A69 /* GridList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC7CAF2B8140A300A91A69 /* GridList.swift */; };
+		05AC7CE62B82911800A91A69 /* ModeloColumnas.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AC7CE52B82911800A91A69 /* ModeloColumnas.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		05AC7CA62B80496200A91A69 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		05AC7CAD2B8132A000A91A69 /* Modelo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modelo.swift; sourceTree = "<group>"; };
 		05AC7CAF2B8140A300A91A69 /* GridList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridList.swift; sourceTree = "<group>"; };
+		05AC7CE52B82911800A91A69 /* ModeloColumnas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeloColumnas.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 				05AC7CA52B80496200A91A69 /* Preview Content */,
 				05AC7CAD2B8132A000A91A69 /* Modelo.swift */,
 				05AC7CAF2B8140A300A91A69 /* GridList.swift */,
+				05AC7CE52B82911800A91A69 /* ModeloColumnas.swift */,
 			);
 			path = DemoListasGrid;
 			sourceTree = "<group>";
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05AC7CE62B82911800A91A69 /* ModeloColumnas.swift in Sources */,
 				05AC7CA22B80496000A91A69 /* ContentView.swift in Sources */,
 				05AC7CA02B80496000A91A69 /* DemoListasGridApp.swift in Sources */,
 				05AC7CAE2B8132A000A91A69 /* Modelo.swift in Sources */,
