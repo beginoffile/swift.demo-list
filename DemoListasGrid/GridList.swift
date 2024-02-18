@@ -13,17 +13,37 @@ struct GridList: View {
         GridItem(.flexible())
     ]
     ]*/
-    let gridItem: [GridItem] = Array(repeating: .init(.flexible(maximum:200)), count: 2)
+    let gridItem: [GridItem] = Array(repeating: .init(.flexible(maximum:80)), count: 2)
     var body: some View {
         NavigationView{
-            ScrollView(.horizontal){
-                LazyHGrid(rows: gridItem, spacing: 30, content: {
+            ScrollView(){
+                LazyVGrid(columns: gridItem, spacing: 30, content: {
                     ForEach(lista){item in
                         Text(item.emoji).font(.system(size: 80))
                     }
                 })
                 
             }.navigationTitle("Grids")
+                .toolbar{
+                    ToolbarItem{
+                        Menu("Opciones"){
+                            Section{
+                                Button("1 columna"){
+                                    print("opcion1")
+                                }
+                                Button("2 columna"){
+                                    print("opcion2")
+                                }
+                                Button("3 columna"){
+                                    print("opcion3")
+                                }
+                                Button("4 columna"){
+                                    print("opcion4")
+                                }
+                            }
+                        }
+                    }
+                }
         }
     }
 }
